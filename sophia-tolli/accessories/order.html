@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+<meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+<meta name="author" content="PIXINVENT">
+<title>Dashboard ecommerce - Vuexy - Bootstrap HTML admin template</title>
+<link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+<link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+<!-- BEGIN: Vendor CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/extensions/toastr.min.css">
+<link rel="stylesheet" type="text/css" href="../../content/theme.min4070.css?v=20201202175948"/>
+<!-- END: Vendor CSS-->
+
+<!-- BEGIN: Theme CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.css">
+
+<!-- BEGIN: Page CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/dashboard-ecommerce.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/charts/chart-apex.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/extensions/ext-component-toastr.css">
+<!-- END: Page CSS-->
+
+<!-- BEGIN: Custom CSS-->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+<!-- BEGIN: Header-->
+<nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow">
+<div class="navbar-container d-flex content">
+<div class="bookmark-wrapper d-flex align-items-center">
+    <ul  class="nav navbar-nav align-items-center ml-auto">
+    <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="user-nav d-sm-flex d-none"><span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></div>
+        <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user"><a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> Profile</a><a class="dropdown-item" href="app-email.html"><i class="mr-50" data-feather="mail"></i> Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="mr-50" data-feather="check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="mr-50" data-feather="message-square"></i> Chats</a>
+        <div class="dropdown-divider"></div><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-pricing.html"><i class="mr-50" data-feather="credit-card"></i> Pricing</a><a class="dropdown-item" href="page-faq.html"><i class="mr-50" data-feather="help-circle"></i> FAQ</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+        </div>
+        </li>
+    </ul>
+</div>
+<ul class="nav navbar-nav align-items-center ml-auto">
+ 
+
+<li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+<div class="search-input">
+<div class="search-input-icon"><i data-feather="search"></i></div>
+<input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="-1" data-search="search">
+<div class="search-input-close"><i data-feather="x"></i></div>
+<ul class="search-list search-list-main"></ul>
+</div>
+</li>
+
+<li class="nav-item dropdown dropdown-notification mr-25"><a class="nav-link" href="javascript:void(0);" data-toggle="dropdown"><i class="ficon" data-feather="bell"></i><span class="badge badge-pill badge-danger badge-up">5</span></a>
+<ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+<li class="dropdown-menu-header">
+<div class="dropdown-header d-flex">
+<h4 class="notification-title mb-0 mr-auto">Notifications</h4>
+<div class="badge badge-pill badge-light-primary">6 New</div>
+</div>
+</li>
+<li class="scrollable-container media-list"><a class="d-flex" href="javascript:void(0)">
+<div class="media d-flex align-items-start">
+<div class="media-left">
+<div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
+</div>
+<div class="media-body">
+<p class="media-heading"><span class="font-weight-bolder">Congratulation Sam 🎉</span>winner!</p><small class="notification-text"> Won the monthly best seller badge.</small>
+</div>
+</div>
+</a><a class="d-flex" href="javascript:void(0)">
+<div class="media d-flex align-items-start">
+<div class="media-left">
+<div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
+</div>
+<div class="media-body">
+<p class="media-heading"><span class="font-weight-bolder">New message</span>&nbsp;received</p><small class="notification-text"> You have 10 unread messages</small>
+</div>
+</div>
+</a><a class="d-flex" href="javascript:void(0)">
+<div class="media d-flex align-items-start">
+<div class="media-left">
+<div class="avatar bg-light-danger">
+<div class="avatar-content">MD</div>
+</div>
+</div>
+<div class="media-body">
+<p class="media-heading"><span class="font-weight-bolder">Revised Order 👋</span>&nbsp;checkout</p><small class="notification-text"> MD Inc. order updated</small>
+</div>
+</div>
+</a>
+<div class="media d-flex align-items-center">
+<h6 class="font-weight-bolder mr-auto mb-0">System Notifications</h6>
+<div class="custom-control custom-control-primary custom-switch">
+<input class="custom-control-input" id="systemNotification" type="checkbox" checked="">
+<label class="custom-control-label" for="systemNotification"></label>
+</div>
+</div><a class="d-flex" href="javascript:void(0)">
+<div class="media d-flex align-items-start">
+<div class="media-left">
+<div class="avatar bg-light-danger">
+<div class="avatar-content"><i class="avatar-icon" data-feather="x"></i></div>
+</div>
+</div>
+<div class="media-body">
+<p class="media-heading"><span class="font-weight-bolder">Server down</span>&nbsp;registered</p><small class="notification-text"> USA Server is down due to hight CPU usage</small>
+</div>
+</div>
+</a><a class="d-flex" href="javascript:void(0)">
+<div class="media d-flex align-items-start">
+<div class="media-left">
+<div class="avatar bg-light-success">
+<div class="avatar-content"><i class="avatar-icon" data-feather="check"></i></div>
+</div>
+</div>
+<div class="media-body">
+<p class="media-heading"><span class="font-weight-bolder">Sales report</span>&nbsp;generated</p><small class="notification-text"> Last month sales report generated</small>
+</div>
+</div>
+</a><a class="d-flex" href="javascript:void(0)">
+<div class="media d-flex align-items-start">
+<div class="media-left">
+<div class="avatar bg-light-warning">
+<div class="avatar-content"><i class="avatar-icon" data-feather="alert-triangle"></i></div>
+</div>
+</div>
+<div class="media-body">
+<p class="media-heading"><span class="font-weight-bolder">High memory</span>&nbsp;usage</p><small class="notification-text"> BLR Server using high memory</small>
+</div>
+</div>
+</a>
+</li>
+<li class="dropdown-menu-footer"><a class="btn btn-primary btn-block" href="javascript:void(0)">Read all notifications</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</nav>
+<ul class="main-search-list-defaultlist d-none">
+<li class="d-flex align-items-center"><a href="javascript:void(0);">
+<h6 class="section-label mt-75 mb-0">Files</h6>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+<div class="d-flex">
+<div class="mr-75"><img src="../../app-assets/images/icons/xls.png" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+</div>
+</div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+<div class="d-flex">
+<div class="mr-75"><img src="../../app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+</div>
+</div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+<div class="d-flex">
+<div class="mr-75"><img src="../../app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+</div>
+</div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+<div class="d-flex">
+<div class="mr-75"><img src="../../app-assets/images/icons/doc.png" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+</div>
+</div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+</a></li>
+<li class="d-flex align-items-center"><a href="javascript:void(0);">
+<h6 class="section-label mt-75 mb-0">Members</h6>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+<div class="d-flex align-items-center">
+<div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+</div>
+</div>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+<div class="d-flex align-items-center">
+<div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+</div>
+</div>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+<div class="d-flex align-items-center">
+<div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+</div>
+</div>
+</a></li>
+<li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+<div class="d-flex align-items-center">
+<div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+<div class="search-data">
+<p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+</div>
+</div>
+</a></li>
+</ul>
+<ul class="main-search-list-defaultlist-other-list d-none">
+<li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+<div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+</a></li>
+</ul>
+<!-- END: Header-->
+
+
+<!-- BEGIN: Main Menu-->
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+<div class="navbar-header">
+<ul class="nav navbar-nav flex-row">
+<li class="nav-item mr-auto"><a class="navbar-brand" href="index.html">
+  
+     <span class="brand-logo">
+        <img src="Asset 1.png" >
+</span> 
+<h2 class="brand-text">Masal</h2>
+</a></li>
+<li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+</ul>
+</div>
+<div class="shadow-bottom"></div>
+<div class="main-menu-content">
+<ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+<li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span></a></li>
+<li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i data-feather="more-horizontal"></i>
+</li>
+<li class=" nav-item"><a class="d-flex align-items-center" href="order.html"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Orders</span></a>
+</li>
+<li class=" nav-item"><a class="d-flex align-items-center" href="app-chat.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Chat</span></a>
+</li>
+<li class=" nav-item"><a class="d-flex align-items-center" href="app-todo.html"><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Retailer Request</span></a>
+</li>
+<li class=" nav-item"><a class="d-flex align-items-center" href="app-calendar.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Calendar">Manage Retailer</span></a>
+</li>
+<li class=" nav-item"><a class="d-flex align-items-center" href="product.html"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Kanban">Products</span></a>
+</li>
+
+<li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="save"></i><span class="menu-title text-truncate" data-i18n="eCommerce">Manage Content</span></a>
+<ul class="menu-content">
+<li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item" data-i18n="Shop">Shop</span></a>
+</li>
+<li><a class="d-flex align-items-center" href="app-ecommerce-details.html"><i data-feather="circle"></i><span class="menu-item" data-i18n="Details">Details</span></a>
+</li>
+<li><a class="d-flex align-items-center" href="app-ecommerce-wishlist.html"><i data-feather="circle"></i><span class="menu-item" data-i18n="Wish List">Wish List</span></a>
+</li>
+<li><a class="d-flex align-items-center" href="app-ecommerce-checkout.html"><i data-feather="circle"></i><span class="menu-item" data-i18n="Checkout">Checkout</span></a>
+</li>
+</ul>
+</li>
+
+<li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Pages">Contact Request</span></a>
+
+</li>
+
+
+
+
+</ul>
+</div>
+</div>
+<!-- END: Main Menu-->
+
+<!-- BEGIN: Content-->
+<div class="app-content content ">
+<div class="content-overlay"></div>
+<div class="header-navbar-shadow"></div>
+<div class="content-wrapper">
+<div class="content-header row">
+</div>
+<div class="content-body">
+<!-- Dashboard Ecommerce Starts -->
+<!-- Quick Stats -->
+<div class="grid grid_12" id="blow">
+<h1 class="grey2 text-center"><span class="grey">—</span> Order  <span class="grey">—</span></h1>
+<p class="alert {{ Session::get('alert-class', 'alert-success') }}"></p>
+<p class="alert {{ Session::get('alert-class', 'alert-danger') }}"></p>
+<div class="nicdark_space20"></div>
+
+<div class="row">   
+<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+<div class="grid grid_6">
+<div class=" nicdark_activity">    
+  <h2>TIANA Dress | #AS1923 Modern Lace Ballgown Wedding Dress
+  </h2>           
+    <section class="section-product" data-product-id="473">
+        <div class="container">
+            <div class="row">
+                <div class="product-bio">
+                    <div class="product-detailed clearfix iblock-fix">
+                        <div class="product-info product-visual">
+<div class="product-media">
+    <div class="product-views clearfix" data-property="parent">
+<div class="product-view overviews common-videolist">
+        
+                <div class="list-item">
+                    <div class="overview" data-lazy-background style="background-image: url(../../%27https_/dy9ihb9itgy3g.cloudfront.net/products/2508/y118jkt/y118jkt_f_d.740.html)">
+                        <a href="dy9ihb9itgy3g.cloudfront.net/products/2508/y118jkt/masal.png"
+                           class="MagicZoom overview-media" data-options="textClickZoomHint: Click to zoom" aria-hidden="true">
+                            <img data-lazy="https://dy9ihb9itgy3g.cloudfront.net/products/2508/y118jkt/masal.png" src=dy9ihb9itgy3g.cloudfront.net/products/2508/y118jkt/masal.png alt="Masal Style #Y118JKT"/>
+                        </a>
+                    </div>
+                </div>
+               
+       
+</div>
+
+    </div>
+
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+    
+<div class="nicdark_archive1 nicdark_border_grey" style="margin-left: 10px">
+<img id="image_1" style="width:60px; height:80px; cursor:pointer;" alt=""  src="../../masal.png">
+</div>
+</div>
+
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+
+<div class="nicdark_archive1 nicdark_border_grey">
+
+
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4" style="visibility: hidden;"></div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+    
+<div class="nicdark_archive1 nicdark_border_grey">
+
+
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4" style="visibility: hidden;"></div>
+</div>
+
+
+<div class="row" style="margin-top: 10px;">
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+
+<div class="nicdark_archive1 nicdark_border_grey" style="margin-left: 10px">
+
+
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4" style="visibility: hidden;"></div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+
+<div class="nicdark_archive1 nicdark_border_grey">
+
+
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4" style="visibility: hidden;"></div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+    
+<div class="nicdark_archive1 nicdark_border_grey">
+
+
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-4 col-xs-4" style="visibility: hidden;"></div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" style="margin-top: 5px;">
+<h1>$100</h1>
+<h3>Description<h3> <p style="text-align: justify;">
+    <a class="btn btn-primary" href="{{ asset('images/products/chart.pdf') }}" style="color: white;" download="Size Chart"> Size Chart </a>
+</p>
+<p>
+TIANA Dress | #AS1923 Modern Lace Ballgown Wedding Dress
+</p>
+
+<form action="{{route('sendorder')}}" method="POST">
+<div class="row">
+<div class="form-group col-md-12 col-sm-12" style="display: none">
+<input type="number" name="pId" value="{{$product->id}}">
+</div>
+
+<div class="form-group col-md-12 col-sm-12">
+<h3> <label for="">Choose Size: <span style="font-size: 30px" id="sizer"></span></label> </h3>
+
+<br>
+<input type="text" style="display: none;" name="size" id="sizer_choose">
+<button type="button" style="" id="" class="btn size_press" value="{{$size}}"></button>
+</div>
+<div class="form-group col-md-12 col-sm-12">
+<h3> <label for="">Choose Colour: <span style="font-size: 30px" id="colourer"></span> 
+</label> </h3>
+<br>
+<!-- <button type="button" style="background-color: {{$color}};width:30px; height:30px;" id="" class="btn color_press" value="{{$color}}"></button> -->
+<button type="button" style="" id="" class="btn color_press" value="{{$color}}"></button>
+
+<input type="text" style="display:none;" name="color" id="colour_choose">
+
+</div>
+
+<div class="form-group col-md-12 col-sm-12">
+<label for="exampleFormControlTextarea1">Enter Quantity  <span style="color: red;">*</span></label>
+<input type="number" name="quantity" placeholder="Enter Product Quantity" class="form-control" required>
+</div> 
+
+<input style="display: none" id="product_price" type="text" value="{{$product->wholesalePrice}}">
+
+<div class="form-group col-md-12 col-sm-12">
+<h3> <label>Quantity </label> </h3>
+<div class="input-group" style="width: 120px;">
+  <div class="input-group-btn">
+    <button type="button" id="down" class="btn btn-danger"> <i class="fa fa-minus" aria-hidden="true"></i> </button>
+    </div>
+ <input type="text" name="quantity" id="myNumber" class="form-control input-number offset-md-4" value="1" />
+<div class="input-group-btn">
+<button id="up" type="button" class="btn btn-success"> <i class="fa fa-plus" aria-hidden="true"></i> </button>
+</div>
+</div>
+
+<h5 style="font-weight: bold;">Price: <span style="font-weight: normal;"> $</span><span id="pricer" style="font-weight: normal;"></span> </h5>
+</div>
+<div class="form-group col-md-12 col-sm-12">
+<h3> <label for="">Extra Changes: <span style="font-size: 30px" id="extra"></span></label> </h3>
+
+<br>
+<input type="text" style="display:none;" name="extra" id="extra_choose">
+<button type="button" style="" id="" class="btn extra_press" value="{{$extra}}"> <div style="color:green"></div> </button>
+
+
+</div>
+
+
+
+<div class="form-group col-md-12 col-sm-12">
+<label for="exampleFormControlTextarea1">Enter Detail</label>
+<textarea id="lolo" class="form-control" name="detail" rows="3" placeholder="(Optional)"></textarea>
+</div>
+<div class="form-group col-md-12 col-sm-12" style="display: none">
+<input type="number" name="product" value="{{$product->id}}">
+</div>
+<div class="form-group col-md-12 col-sm-12" style="display: none">
+<input type="number" name="user" value="{{Auth::user()->id}}">
+</div>
+ <input type="submit" name="cart" value="Add to Cart" class="btn btn-primary"> 
+</form>
+</div>
+</div>
+
+
+</div>
+<!-- Dashboard Ecommerce ends -->
+
+</div>
+</div>
+</div>
+<!-- END: Content-->
+
+<div class="sidenav-overlay"></div>
+<div class="drag-target"></div>
+
+<!-- BEGIN: Footer-->
+<footer class="footer footer-static footer-light">
+<p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020<a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span></p>
+</footer>
+<button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+<!-- END: Footer-->
+
+
+<!-- BEGIN: Vendor JS-->
+<script src="../../app-assets/vendors/js/vendors.min.js"></script>
+<!-- BEGIN Vendor JS-->
+
+<!-- BEGIN: Page Vendor JS-->
+<script src="../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+<script src="../../app-assets/vendors/js/extensions/toastr.min.js"></script>
+<!-- END: Page Vendor JS-->
+
+<!-- BEGIN: Theme JS-->
+<script src="../../app-assets/js/core/app-menu.js"></script>
+<script src="../../app-assets/js/core/app.js"></script>
+<!-- END: Theme JS-->
+
+<!-- BEGIN: Page JS-->
+<script src="../../app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
+<!-- END: Page JS-->
+
+<script>
+$(window).on('load', function() {
+if (feather) {
+feather.replace({
+width: 14,
+height: 14
+});
+}
+})
+</script>
+<script src="https://use.fontawesome.com/a4efe5b4ba.js"></script>
+
+<script src="js/pages/ecomProducts.js"></script>
+<script>$(function(){ EcomProducts.init(); });</script>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Sleeve </h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    <form action="{{route('Sleeve ')}}" method="POST" enctype="multipart/form-data">
+    
+    <div class="row">
+   
+    <div class="form-group col-md-12">
+    <label class="col-md-12 control-label"> Enter New Sleeve  <span style="color: red"> * </span></label>
+    <div class="col-md-12">
+    <input type="text" placeholder="Enter Sleeve " name="Sleeve " class="form-control" required>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="form-group">
+        <label class="col-md-12 control-label">Sleeve  Image <span style="color: red"> * </span></label>
+        <div class="col-md-12">
+        <input type="file" name="first" class="form-control-file btn btn-primary" required>
+        </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+    <input type="button" class="btn btn-secondary" value="Close" data-dismiss="modal">
+    <input type="submit" name="sendSleeve " value="Submit" class="btn btn-primary"> 
+    </form>
+    </div>
+    </div>
+    </div>
+ </div>
+</body>
+<!-- END: Body-->
+
+</html>
+<script>
+
+    magnify('main_image', 2);
+    
+    $("#image_2").click(function() {
+    var temp=$('#image_2').attr('src');
+    $('#main_image').attr('src',temp);
+    magnify('main_image', 2);
+    
+    });
+    
+    $("#image_1").click(function() {
+    var temp=$('#image_1').attr('src');
+    $('#main_image').attr('src',temp);
+    magnify('main_image', 2);
+    
+    });
+    
+    $("#image_3").click(function() {
+    var temp=$('#image_3').attr('src');
+    $('#main_image').attr('src',temp);
+    magnify('main_image', 2);
+    
+    });
+    
+    
+    $("#image_4").click(function() {
+    var temp=$('#image_4').attr('src');
+    $('#main_image').attr('src',temp);
+    magnify('main_image', 2);
+    
+    });
+    
+    $("#image_5").click(function() {
+    var temp=$('#image_5').attr('src');
+    $('#main_image').attr('src',temp);
+    magnify('main_image', 2);
+    
+    });
+    
+    
+    $("#image_6").click(function() {
+    var temp=$('#image_6').attr('src');
+    $('#main_image').attr('src',temp);
+    magnify('main_image', 2);
+    
+    });
+    
+    
+    
+    $("#up").click(function() {
+    var max=1000;
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    if (document.getElementById("myNumber").value >= parseInt(max)) {
+    document.getElementById("myNumber").value = max;
+    }
+    
+    });
+    $("#down").click(function() {
+    var min=1;
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+    document.getElementById("myNumber").value = min;
+    }
+    
+    });
+    
+    
+    $("#up").click(function(){
+    var price=$("#product_price").val();
+    var quantity=$("#myNumber").val();
+    var finaler=price*quantity;
+    $("#pricer").html(finaler);
+    if(quantity >= 1)
+    {
+        $("#down").removeAttr("disabled")
+    }
+    });
+    
+    $("#down").click(function(){
+    var price=$("#product_price").val();
+    var quantity=$("#myNumber").val();
+    var finaler=price*quantity;
+    $("#pricer").html(finaler);
+    if(quantity == 1)
+    {
+        $("#down").attr('disabled','disabled');
+    }
+    
+    });
+    
+    $("#myNumber").on("input",function()
+    {
+    var price=$("#product_price").val();
+    var quantity=$("#myNumber").val();
+    var finaler=price*quantity;
+    $("#pricer").html(finaler);
+    });
+    
+    
+    
+    
+    
+    
+    
+    $(".color_press").click(function(){
+    var color=$(this).val();
+    $("#colour_choose").val(color);
+    $("#colourer").html(color);
+    });
+    
+    
+    $(".size_press").click(function(){
+    var size=$(this).val();
+    $("#sizer_choose").val(size);
+    $("#sizer").html(size);
+    });
+    
+    $(".extra_press").click(function(){
+    var extra=$(this).val();
+    $("#extra_choose").val(extra);
+    $("#extra").html(extra);
+    });
+    </script>
+    <script src="../../js/theme.min0368.js"></script>
+    <script>
+    jQuery(function($) {
+        window.Syvo.Google_Analytics.load({"TrackingCode":"UA-11484610-13","Event":2,"Parameters":{"Style":"Y118JKT","Name":"Masal Y118JKT","Brand":"Masal/Accessories","Variant":null,"List":null,"Price":null,"Quantity":null,"Position":null,"Id":null}});
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+jQuery(function($) {
+  var initSlickDots, moveSlickDots;
+  var appendOverviewsDots = ".previews";
+  window.Syvo.Product_Views.load({
+  previews: {
+    slidesToScroll: 1,
+    slidesToShow: 5,
+    responsive: null,
+    infinite: false
+  },
+  overviews: {
+    keepViewsVisible: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    fade: false,
+    infinite: true,
+    magicZoom: {
+      zoomOn: "hover",
+      hint: false,
+      rightClick: true,
+      refreshOnSlideChange: false
+    },
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          prevArrow: "<div class='slick-arrow slick-prev products-arrow'><span class='arrow'></span></div>",
+          nextArrow: "<div class='slick-arrow slick-next products-arrow'><span class='arrow'></span></div>",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          adaptiveHeight: false,
+          dots:true,
+          appendDots: appendOverviewsDots
+        }
+      }
+    ]
+  },
+
+    previewVideos: {
+      selector: "[data-list='preview-videos']",
+      asNavFor: "[data-list='overview-videos']",
+      rightClick: true,
+      infinite: false,
+      vertical: true,
+      verticalSwiping: true,
+      focusOnSelect: true,
+      dots: false,
+      arrows: false
+    },
+    overviewVideos: {
+      selector: "[data-list='overview-videos']",
+      asNavFor: "[data-list='preview-videos']",
+      rightClick: true,
+      infinite: false,
+      fade: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      focusOnSelect: false,
+      arrows: false,
+      dots: false
+    },
+          callback: function () {
+
+    var previewSlick = $("[data-list='previews']");
+    var previewItems = previewSlick.find(".preview");
+    
+    if (!previewItems || previewItems.length <= 0)
+      return;
+    
+    previewItems
+      .click(
+      function (e) {
+        var currentIndex = $.inArray(this, previewItems);
+        if(currentIndex === 0){
+          var overviewsSlick = $("[data-list='overviews']");
+          overviewsSlick.slick('slickGoTo', currentIndex);
+        }
+      }
+    );
+  }
+}
+                              );
+}
+    );
+</script>
